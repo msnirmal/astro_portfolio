@@ -2,12 +2,16 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout>
+<Layout> 
+
   <h1>Featured Recipes</h1>
 
   <div class="row">
+
+    
     <div class="col-md-4">
       <div class="card mb-3">
+        <img src="/pasta.jpg" class="card-img-top recipe-image" alt="Creamy Pasta" />
         <div class="card-body">
           <h5 class="card-title">Creamy Pasta</h5>
           <p class="card-text">A simple and delicious pasta dish.</p>
@@ -16,18 +20,22 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </div>
 
+    
     <div class="col-md-4">
       <div class="card mb-3">
+        <img src="/pizza.jpg" class="card-img-top recipe-image" alt="delicious pizza"/>
         <div class="card-body">
-          <h5 class="card-title">Spicy Curry</h5>
-          <p class="card-text">A warm and comforting curry.</p>
-          <a href="/recipes/curry" class="btn btn-primary">View Recipe</a>
+          <h5 class="card-title">Pizza</h5>
+          <p class="card-text">Pure cheesy bliss in every bite.</p>
+          <a href="/recipes/pizza" class="btn btn-primary">View Recipe</a>
         </div>
       </div>
     </div>
 
+    
     <div class="col-md-4">
       <div class="card mb-3">
+        <img src="/salad.jpg" class="card-img-top recipe-image" alt="Fresh Salad" />
         <div class="card-body">
           <h5 class="card-title">Fresh Salad</h5>
           <p class="card-text">A healthy and refreshing salad.</p>
@@ -35,5 +43,6 @@ import Layout from '../layouts/Layout.astro';
         </div>
       </div>
     </div>
+
   </div>
 </Layout>
